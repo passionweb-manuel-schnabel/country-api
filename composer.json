@@ -1,0 +1,31 @@
+{
+  "name": "passionweb/country-api",
+  "license": "GPL-3.0",
+  "description": "Shows example usages of the TYPO3 Country API. (TYPO3 CMS)",
+  "type": "typo3-cms-extension",
+  "homepage": "https://www.passionweb.de",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Manuel Schnabel",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "typo3/cms-core": "^12.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Passionweb\\CountryApi\\": "Classes/"
+    }
+  },
+  "replace": {
+      "typo3-ter/country-api": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "country_api"
+    }
+  }
+}
